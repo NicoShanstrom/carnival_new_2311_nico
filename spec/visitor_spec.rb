@@ -16,13 +16,14 @@ RSpec.describe Visitor do
         visitor1 = Visitor.new('Bruce', 54, '$10')
         visitor2 = Visitor.new('Tucker', 36, '$5')
         visitor3 = Visitor.new('Penny', 64, '$15')
-        
+
         expect(visitor1.preferences).to eq([])
         visitor1.add_preference(:gentle)
         visitor1.add_preference(:thrilling)
         expect(visitor1.preferences).to eq([:gentle, :thrilling])
-
     end
+
+    
 end
 
 
