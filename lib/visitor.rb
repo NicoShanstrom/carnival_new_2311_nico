@@ -6,6 +6,15 @@ class Visitor
         @name = name
         @height = height
         @spending_money = spending_money
+        @preferences = []
+    end
+
+    def preferences
+        @preferences
+    end
+    
+    def add_preference(preference)
+        @preferences << preference
     end
 
 end
