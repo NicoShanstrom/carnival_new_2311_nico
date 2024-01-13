@@ -1,11 +1,12 @@
 class Visitor
     attr_reader :name, 
-                :height,
-                :spending_money
+                :height
+
+    attr_accessor :spending_money
     def initialize(name, height, spending_money)
         @name = name
         @height = height
-        @spending_money = spending_money
+        @spending_money = spending_money.gsub('$', '').to_i
         @preferences = []
     end
 
