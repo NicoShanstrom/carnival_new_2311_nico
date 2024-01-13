@@ -1,4 +1,4 @@
-# require 'spec_helper'
+require 'spec_helper'
 require './lib/ride'
 require './lib/visitor'
 
